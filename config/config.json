@@ -1,0 +1,15 @@
+{
+  "development": {
+    "dialect": "sqlite",
+    "storage": "database.sqlite"
+  },
+  "test": {
+    "use_env_variable": true,
+    "dialect": "sqlite",
+    "storage": ":memory:" 
+  },
+  "production": {
+    "dialect": "sqlite",
+    "storage": "database.sqlite"
+  }
+}
