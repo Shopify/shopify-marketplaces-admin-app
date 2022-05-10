@@ -26,7 +26,7 @@ This is a Node App with Express and React. It is to be used as a starting point 
 
 - [Yarn](https://yarnpkg.com/en/)
 - [Sequelize-cli](https://www.npmjs.com/package/sequelize-cli) installed on your system
-- [Shopify CLI](https://github.com/Shopify/shopify-cli) installed and [configured for local development](https://shopify.dev/apps/tools/cli/getting-started#4-start-a-local-development-server)
+- [Shopify CLI](https://github.com/Shopify/shopify-cli) installed and [configured for local development](https://shopify.dev/apps/tools/cli/getting-started#4-start-a-local-development-server) (version >= 2.16.1)
 
 To set up for first time
 
