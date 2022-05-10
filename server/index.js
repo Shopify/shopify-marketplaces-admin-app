@@ -146,7 +146,6 @@ async function startServer() {
 
   app.listen(process.env.PORT || 3000, function (err) {
     if (err) {
-      console.log(err);
       return console.error(err);
     }
 
