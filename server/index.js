@@ -69,7 +69,7 @@ async function startServer() {
 
   addWebhookHandlers();
 
-  app.get('/auth', async (req, res) => {
+  app.get('/login', async (req, res) => {
     const authRoute = await Shopify.Auth.beginAuth(
       req,
       res,
@@ -146,6 +146,7 @@ async function startServer() {
 
   app.listen(process.env.PORT || 3000, function (err) {
     if (err) {
+      console.log(err);
       return console.error(err);
     }
 

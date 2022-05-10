@@ -14,7 +14,7 @@
     "node": "^16.13.1"
   },
   "resolutions": {
-    "node-gyp": "4.0.0"
+    "node-gyp": "9.0.0"
   },
   "dependencies": {
     "@apollo/client": "^3.5.6",
