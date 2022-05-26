@@ -69,7 +69,8 @@ async function startServer() {
 
   addWebhookHandlers();
 
-  app.get('/login', async (req, res) => {
+  // latest version of shopify-cli uses 'login' route vs old version uses 'auth'
+  app.get('/:type(login|auth)', async (req, res) => {
     const authRoute = await Shopify.Auth.beginAuth(
       req,
       res,
