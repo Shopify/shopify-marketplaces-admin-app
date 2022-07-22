@@ -1,0 +1,4 @@
+SHOPIFY_API_KEY=883f251aa3f06b56114fc9f315dbcf02
+SHOPIFY_API_SECRET=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
+SHOP=karen-dev-1.myshopify.com
+SCOPES=write_products,write_customers,write_draft_orders

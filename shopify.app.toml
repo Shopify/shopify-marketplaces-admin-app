@@ -1,2 +1,1 @@
-name = "shopify-marketplaces-admin-app"
 scopes = "unauthenticated_read_product_listings,read_product_listings"

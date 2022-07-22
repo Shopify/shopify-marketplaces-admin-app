@@ -2,7 +2,7 @@ import React from 'react';
 import {
   FeatureListCard,
   OverviewPage,
-  ProductStatusSection,
+  ProductSyncSection,
 } from '@shopify/channels-ui';
 import {useAppBridge} from '@shopify/app-bridge-react';
 import {AppLink, ChannelMenu} from '@shopify/app-bridge/actions';
@@ -30,7 +30,7 @@ const Overview = ({
   return (
     <OverviewPage title="Mockingbird channel overview">
       <OverviewPage.Section title="Product status on Mockingbird">
-        <ProductStatusSection
+        <ProductSyncSection
           manageAction={{
             content: 'Manage availability',
             external: true,
