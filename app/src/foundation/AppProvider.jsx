@@ -6,8 +6,8 @@ import translations from '@shopify/channels-ui/locales/en.json';
 import GraphQLProvider from './GraphQL';
 import Link from './Link';
 
-import '@shopify/polaris/dist/styles.css';
-import '@shopify/channels-ui/dist/styles.css';
+import '@shopify/polaris/build/esm/styles.css';
+import '@shopify/channels-ui/build/esm/styles.css';
 import RoutePropagator from './RoutePropagator';
 
 const AppProvider = () => {
