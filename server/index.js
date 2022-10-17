@@ -132,6 +132,19 @@ async function startServer() {
 
   app.use(history());
 
+  app.use((req, res, next) => {
+    const shop = req.query.shop;
+    if (Shopify.Context.IS_EMBEDDED_APP && shop) {
+      res.setHeader(
+        'Content-Security-Policy',
+        `frame-ancestors https://${shop} https://admin.shopify.com;`,
+      );
+    } else {
+      res.setHeader('Content-Security-Policy', `frame-ancestors 'none';`);
+    }
+    next();
+  });
+
   if (process.env.NODE_ENV === 'production') {
     app.use(express.static(path.join(__dirname, '../dist')));
   } else {
